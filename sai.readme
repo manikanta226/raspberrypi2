@@ -1,0 +1,10 @@
+compilation commands :
+
+KERNEL=kernel7
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- bcm2709_defconfig O=/sai/raspberrypi/kernel_out/
+make ARCH=arm CROSS_COMPILE=arm-linux-gnueabihf- zImage modules dtbs O=/sai/raspberrypi/kernel_out/
+
+dts file :
+arch/arm/boot/dts/bcm2708-rpi.dtsi
+
+
